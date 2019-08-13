@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: repeating-linear-gradient(45deg,white 5%,rgba(12, 8, 8, 0.5) 10%),repeating-linear-gradient(-45deg,white 5%,rgba(14, 7, 8, 0.5) 10%);
+}
+.btn{
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(45deg, gray,white);
+  color: black;
+  position: relative;
+  border-radius: 3%;
+  cursor: pointer;
+}
+.btn:hover .innerbtn{
+  background: linear-gradient(-90deg,white,gray);
+}
+.innerbtn{
+position: absolute;
+width: 80%;
+height: 80%;
+top:10%;
+left: 10%;
+font-size: 30px;
+line-height:60px;
+background: linear-gradient(-45deg,white,gray);
+transition: 1s;
+}
+.main{
+  width: 310px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+
+  background: black;
+  border: 5px solid black;
+  box-shadow: 10px 10px 20px black;
+}
+.screen{
+  width: 290px;
+  height: 100px;
+  margin:5px;
+  font-size: 30px;
+  background: white;
+  overflow: auto;
+}
